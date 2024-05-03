@@ -1,5 +1,6 @@
 import { ReactElement } from "react"
 import Link from "next/link"
+import TitleCard from "./TitleCard"
 
 interface CardProps{
     image: string,
@@ -14,9 +15,7 @@ export default function Card({title, image, url}: CardProps): ReactElement{
                 <div className="w-20 overflow-hidden shrink-0 sm:h-40 sm:w-full mobile-m:w-30">
                     <div className="h-full" style={{background: `url(${image})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}></div>
                 </div>
-                <div className="flex items-center grow p-2">
-                    <h3 className="text-sm text-green-600 font-semibold mobile-lg:text-lg">{title}</h3>
-                </div>
+                <TitleCard title={title}/>
             </Link>
         </article>
     )
