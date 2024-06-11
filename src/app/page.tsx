@@ -3,7 +3,7 @@ import Card from "./components/Card";
 
 export default function Home() {
   return (
-    <main className="p-2.5 flex-1">
+    <main className="px-2.5 py-2.5 sm:px-16 sm:py-10 flex-1" style={{minHeight: "calc(100vh - 214px)"}}>
       <section>
         <h2 className={`text-xl font-bold text-green-600 ${anta.className}`}>ARTIGOS</h2>
         <hr className="border-gray-100" />
