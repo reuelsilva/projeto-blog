@@ -2,7 +2,7 @@ import { anta } from "@/app/utils/font";
 import { ReactElement } from "react";
 
 interface SectionTitleProps{
-    children: React.ReactNode
+    children: string
 }
 
 export default function SectionTitle({children}: SectionTitleProps):ReactElement{

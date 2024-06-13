@@ -3,7 +3,7 @@ import Link from "next/link"
 
 interface NavItemProps{
     to: string,
-    children: React.ReactNode
+    children: string
 }
 
 export default function NavItem({to, children}: NavItemProps): ReactElement{
