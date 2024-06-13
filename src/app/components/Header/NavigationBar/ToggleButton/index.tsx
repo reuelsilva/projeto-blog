@@ -1,18 +1,12 @@
 "use client"
-
 import { ReactElement } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
-
-const toggleMenu = () => {
-    const ul = document.getElementById("menu")
-    ul?.classList.toggle("hidden")
-    ul?.classList.toggle("flex")
-}
+import toggleNavigationMenu from '@/app/utils/toggle-navigation-menu'
 
 export default function ToggleButton(): ReactElement{
     return(
         <>
-            <button onClick={toggleMenu} className='sm:hidden'>
+            <button onClick={toggleNavigationMenu} className='sm:hidden'>
                 <MenuIcon className='text-white text-4xl'/>
             </button>
         </>
