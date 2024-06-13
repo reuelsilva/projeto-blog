@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import ToggleButton from "./ToggleButton";
-import NavItem from "./NavigationMenu/NavItem";
 import NavigationMenu from "./NavigationMenu";
 
 export default function NavigationBar(): ReactElement{
