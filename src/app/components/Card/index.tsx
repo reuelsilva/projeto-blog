@@ -15,7 +15,7 @@ export default function Card({title, image, url}: CardProps): ReactElement{
                 <div className="w-20 overflow-hidden shrink-0 sm:h-40 sm:w-full mobile-m:w-30">
                     <div className="h-full" style={{background: `url(${image})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}></div>
                 </div>
-                <TitleCard title={title}/>
+                <TitleCard>{title}</TitleCard>
             </Link>
         </article>
     )
