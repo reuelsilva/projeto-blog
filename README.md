@@ -8,4 +8,5 @@
   <li>JavaScript 🟡</li> 
   <li>Tailwind CSS 🔵</li> 
   <li>HTML 🟠</li> 
+  <li>Jest + React Testing Library 🔴</li>
 </ul>
