@@ -6,7 +6,7 @@ import toggleNavigationMenu from '@/app/utils/toggle-navigation-menu'
 export default function ToggleButton(): ReactElement{
     return(
         <>
-            <button onClick={toggleNavigationMenu} className='sm:hidden'>
+            <button data-testid="button-toggle" onClick={toggleNavigationMenu} className='sm:hidden'>
                 <MenuIcon className='text-white text-4xl'/>
             </button>
         </>
