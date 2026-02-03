@@ -3,7 +3,7 @@ import SectionTitle from "./components/SectionTitle";
 
 export default function Home() {
   return (
-    <main className="px-2.5 py-2.5 sm:px-16 sm:py-10 flex-1" style={{minHeight: "calc(100vh - 214px)"}}>
+    <main className="px-2.5 py-2.5 sm:px-16 sm:py-10 flex-1 md:mt-[214px]" style={{minHeight: "calc(100vh - 214px)"}}>
       <section>
         <SectionTitle>ARTIGOS</SectionTitle>
         <hr className="border-gray-100" />

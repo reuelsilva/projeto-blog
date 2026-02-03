@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Home(){
     return(
-        <main className="max-w-lg mx-auto my-0 p-2.5">
+        <main className="max-w-lg mx-auto my-0 p-2.5 md:mt-[214px]">
             <article>
                 <h2 className={`text-2xl text-green-600 font-bold ${anta.className} sm:text-4xl`}>A história do mascote do Android</h2>
                 <p className="my-3 text-justify indent-5">Provavelmente você sabe que o sistema operacional <strong className="text-green-500">Android</strong>, mantido pelo <strong className="text-green-500">Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p> 
