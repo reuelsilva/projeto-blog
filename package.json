@@ -9,8 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:dev": "npx playwright test --project=dev",
-    "test:prod": "npx playwright test --project=prod"
+    "test:e2e": "npx playwright test"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
