@@ -1,12 +1,20 @@
 import { test, expect } from '@playwright/test';
+import { HomePage } from '../page-objects/homePage';
 
-test.describe('navegação para artigos', () => {
-  test('direciona para o artigo correto ao clicar no título', async ({ page }) => {
-  await page.goto('/');
+test.describe('Navegação para artigos', () => {
+  test('Deve redirecionar para o artigo correto', async ({ page }) => {
+    await page.goto('/');
 
-  const articleItem = page.getByTitle('A história do mascote do Android');
-  await articleItem.click();
-  
-  await expect(page).toHaveURL('/artigo/a-historia-do-bugdroid');
-});
+    const data = {
+      title: 'A história do mascote do Android',
+      endpoint: '/artigo/a-historia-do-bugdroid'
+    }
+
+    const onHomePage = new HomePage(page);
+
+    await onHomePage.navigateToArticle(data.title);
+
+    await expect(page).toHaveURL(data.endpoint);
+    await expect(page.locator('article h2')).toHaveText(data.title);
+  });
 })
