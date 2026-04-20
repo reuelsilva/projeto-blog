@@ -1,5 +1,5 @@
 ## User Story
 
-Como usuário da página inicial do site,  
-Quero clicar em um card de artigo,  
+Como usuário na página inicial,  
+Quero clicar em um item de artigo,  
 Para acessar a página do artigo e ler seu conteúdo completo.
