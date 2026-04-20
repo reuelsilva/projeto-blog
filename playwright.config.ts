@@ -35,14 +35,6 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'dev',
-      use: { baseURL: 'http://localhost:3000' }
-    },
-    {
-      name: 'prod',
-      use: { baseURL: 'https://curiosidades-de-tecnologia.vercel.app/' }
-    },
-    {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
