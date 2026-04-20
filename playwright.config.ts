@@ -36,25 +36,35 @@ export default defineConfig({
   projects: [
     {
       name: 'dev',
-      use: {baseURL: 'http://localhost:3000'}
+      use: { baseURL: 'http://localhost:3000' }
     },
     {
       name: 'prod',
-      use: {baseURL: 'https://curiosidades-de-tecnologia.vercel.app/'}
+      use: { baseURL: 'https://curiosidades-de-tecnologia.vercel.app/' }
     },
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome']},
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: 'http://localhost:3000',
+
+      },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+        baseURL: 'http://localhost:3000'
+      },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: {
+        ...devices['Desktop Safari'],
+        baseURL: 'http://localhost:3000'
+      },
     },
 
     /* Test against mobile viewports. */
